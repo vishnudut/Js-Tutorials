@@ -69,7 +69,7 @@ function checkForEndGame() {
             updateScore();
         }
     }
-
+// To check who won the game 
     if (playerScore > 21) {
         playerWon = false;
         gameOver = true;
@@ -139,6 +139,7 @@ function getScore(cardArray) {
     }
     return score
 }
+
 
 function updateScore() {
     dealerScore = getScore(dealerCards);
