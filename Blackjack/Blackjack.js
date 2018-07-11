@@ -195,7 +195,7 @@ function showStatus() {
         if (playerWon) {
             textarea.innerText += "YOU WIN!";
         } else {
-            textarea.innerText = +"DEALER WINS";
+            textarea.innerText += "DEALER WINS";
         }
         newGameButton.style.display = 'inline';
         hit.style.display = 'none';
