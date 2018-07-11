@@ -1,0 +1,45 @@
+body {
+    background:url('space.jpg');
+    background-size:100%;
+    background-repeat:no-repeat;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clock {
+    border: 20px solid #fafafa;
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+    position: relative;
+    margin: 100px auto;
+    padding: 2rem;
+    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1),
+    inset 0 0 0 3px #EFEFEF,
+    inset 0 0 10px black,
+    0 0 10px rgba(0, 0, 0, 0.2);
+    opacity:0.5;
+
+}
+
+.hand {
+    width: 50%;
+    height: 6px;
+    position: absolute;
+    background: black;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.28, 2.19, 0.58, 1);
+
+
+}
+
+.clock-face {
+    height: 100%;
+    width: 100%;
+    transform: translateY(-3px);
+    position: relative;
+}
